@@ -1,0 +1,33 @@
+
+
+.slider {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid blue;
+}
+
+.slide-content {
+	display: grid;
+	grid-template-columns;
+}
+
+.slide-content .text-content {margin-left: 20px;}
+
+.slide-content img {width: 100%;}
+
+.slick-initialized .slick-slide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+
+.kitten-slide img {width: 100%;}
+
+.kitten-slide img {width: 100%;}
+.kitten-slide { margin: 0 0;}
+
+/* for Sam G only */
+.slick-slide { margin: 8px; width: 220px;}

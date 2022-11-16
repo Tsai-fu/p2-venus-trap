@@ -92,8 +92,8 @@ img {
     width: 100%;
 }
 
-.button {
-    background-color: #a2cb3b;
+.button-b {
+    background-color: #9ad8d8;
     /* position: absolute; */
     width: 281px;
     /* height: 70px; */
@@ -106,9 +106,9 @@ img {
     /* justify-content: center; */
 }
 
-.button:hover {
+.button-b:hover {
     color: #ffffff;
-    background-color: #4F493d;
+    background-color: #a2cb3b;
 }
 
 nav {
@@ -116,7 +116,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    /* padding: 0px 0px 0px 50px; */
     width: 100vw;
     position: fixed;
     font-weight: 700;
@@ -134,11 +133,12 @@ nav {
 .topnav {
     display: flex;
     list-style: none;
+    padding: 0;
+    align-items: center;
 }
 
 .topnav li {
     padding-right: 80px;
-    padding-top: 1px;
     /* border: 1px solid red; */
 
 }
@@ -186,9 +186,9 @@ footer {
     padding-right: 15px;
 }
 
-/* .center {
-    text-align: center;
-} */
+.left {
+    margin-bottom: 15px;
+}
 
 .home-banner {
     width: 100%;
@@ -209,25 +209,22 @@ footer {
 
 .bottomnav {
     display: flex;
+    align-items: center;
     list-style: none;
-    /* border: 1px solid red; */
+    padding: 0;
+    padding-top: 10px;
+    border-top: 2px solid #ffffff;
+
 }
 
 .bottomnav li {
     justify-content: space-between;
-    padding-right: 190px;
-    /* padding-left: 0px; */
-    padding-top: 10px;
+    padding-right: 205px;
     /* border: 1px solid red; */
 
 }
 
-.footernav {
-    /* border: 1px solid rgb(21, 255, 0); */
-}
-
-.homepage main,
-.nutritious-page main {
+.homepage main {
     display: flex;
     flex-wrap: wrap;
     width: 78%;
@@ -245,18 +242,6 @@ footer {
 
 .homepage main .right {
     /* border: 1px solid red; */
-}
-
-section .top {
-    width: 78%;
-    margin: auto;
-    padding-top: 80px;
-    /* border: 1px solid red; */
-}
-
-section .top h2,
-main .left h2 {
-    line-height: 120%;
 }
 
 

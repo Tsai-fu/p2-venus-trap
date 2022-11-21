@@ -11,18 +11,60 @@
 </head>
 
 <body class="product-page">
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="image/logo.png"></a>
+    <nav class="desktop-nav">
+        <div class="home">
+            <a href="index.html"><img src="image/s-logo.png"><span class="logotype">VENUS
+                    TRAP</span></a>
         </div>
-        <ul class="topnav">
-            <li><a class="nav-hover" href="shop.html">SHOP</a></li>
-            <li><a class="nav-hover" href="about.html">ABOUT</a></li>
-            <li><a class="nav-hover">CONTACT</a></li>
-            <li><img src="image/icon/cart.png"></li>
-            <li><img src="image/icon/user.png"></li>
+        <ul>
+            <li>
+                <a href="shop.html">SHOP</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">CONTECT</a>
+            </li>
+            <li>
+                <a href="#"><img src="image/icon/user.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="image/icon/cart.png"></a>
+            </li>
         </ul>
     </nav>
+    <nav class="mobile-nav">
+        <div class="icon column">&nbsp;
+            <div class="hamburger"></div>
+        </div>
+        <ul class="drop-down">
+            <li>
+                <a href="#">SHOP</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+        <div class="home column">
+            <a href="#"><img src="image/s-logo.png"></a>
+        </div>
+        <ul class="user-icons column">
+            <li>
+                <img src="image/icon/user.png">
+            </li>
+            <li>
+                <img src="image/icon/cart.png">
+            </li>
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
 
     <main>
         <div>
@@ -33,9 +75,36 @@
 
     <main>
         <div>
-            <img src="image/shop-products/filter.png">
+
+            <div class="container">
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="image/filter-imgs/1.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image/filter-imgs/2.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image/filter-imgs/3.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image/filter-imgs/4.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image/filter-imgs/5.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image/filter-imgs/6.png" style="width:90%" onclick="myFunction(this);">
+                </div>
+
+            </div>
         </div>
-        <div>
+        </div>
+        <div class="product-info">
             <h1>VT Faucet Water Filter System</h1>
             <span style="color: #a2cb3b;">
                 <h2 class="bold-body">$ 19.99</h2>
@@ -60,7 +129,7 @@
                 <div>
                     <h3>
                         <a class="button-b" href="product.html">
-                            <img src="image/icon/cart.png"> Add to Cart
+                            <img src="image/icon/cart.png" height="40px"> Add to Cart
                         </a>
                     </h3>
                 </div>
@@ -74,6 +143,43 @@
                 </div>
 
             </div>
+
+
+        </div>
+        <button onclick="revealMessage()" class="button">
+            <h3>Detail</h3><img src="image/icon/more-info.png">
+        </button>
+        <div id="hiddenMessage" style="display:none">
+            <p>The Basic Water Filter Faucet System attaches easily to your faucet and includes one 100-gallon filter.
+                This system removes 99% of lead and reduces chlorine (taste and odor), benzene, asbestos and
+                trichloroethylene from tap water.* See the User's Guide for more details.
+            </p>
+        </div>
+
+        <button onclick="revealMessage()" class="button">
+            <h3>FAQs</h3><img src="image/icon/more-info.png">
+        </button>
+        <div id="hiddenMessage" style="display:none">
+            <p>The Basic Water Filter Faucet System attaches easily to your faucet and includes one 100-gallon filter.
+                This system removes 99% of lead and reduces chlorine (taste and odor), benzene, asbestos and
+                trichloroethylene from tap water.* See the User's Guide for more details.
+            </p>
+        </div>
+
+        <button onclick="revealMessage()" class="button">
+            <h3>Product Specs</h3><img src="image/icon/more-info.png">
+        </button>
+        <div id="hiddenMessage" style="display:none">
+            <p>The Basic Water Filter Faucet System attaches easily to your faucet and includes one 100-gallon filter.
+                This system removes 99% of lead and reduces chlorine (taste and odor), benzene, asbestos and
+                trichloroethylene from tap water.* See the User's Guide for more details.
+            </p>
+        </div>
+
+        <h5>*Substances reduced may not be in all users’ water. ^Time estimate based on 11 glasses per day for
+            an average household.</h5>
+        </div>
+
         </div>
 
     </main>
@@ -115,6 +221,16 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
 
 </body>
 

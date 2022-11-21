@@ -256,16 +256,6 @@ nav li {
     transform: rotate(135deg);
 }
 
-.icon.active .more-info:before {
-    top: 0;
-    transform: rotate(0deg);
-}
-
-.icon.active .more-info:after {
-    top: 0;
-    transform: rotate(180deg);
-}
-
 .drop-down {
     background-color: #efefef;
     font-weight: 700;
@@ -394,6 +384,10 @@ footer {
     margin-left: 20px;
 }
 
+.more-info {
+    border-top: #9ad8d8 solid 2px;
+}
+
 /* .product-details {
     border-top: #9ad8d8 solid 2px;
 } */
@@ -402,11 +396,6 @@ footer {
     /* width: 40%; */
     border: 1px solid red;
 }
-
-/* .product-slide-content {
-    display: grid;
-    grid-template-columns;
-} */
 
 .product-slide-content {
     margin-left: 20px;

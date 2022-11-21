@@ -18,8 +18,16 @@ function closeMobileMenu() {
 $(toggleIcon)
 $(closeMobileMenu)
 
-function revealMessage() {
-    document.getElementById("hiddenMessage").style.display = 'block';
+function revealDetail() {
+    document.getElementById("hiddenMessage1").style.display = 'block';
+}
+
+function revealFAQs() {
+    document.getElementById("hiddenMessage2").style.display = 'block';
+}
+
+function revealProductSpecs() {
+    document.getElementById("hiddenMessage3").style.display = 'block';
 }
 
 $(function () {

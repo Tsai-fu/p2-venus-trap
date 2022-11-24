@@ -22,7 +22,7 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    line-height: 135%;
+    line-height: 180%;
     font-kerning: 6%;
     color: #152c53;
     background: #ffffff;
@@ -84,6 +84,14 @@ li {
 
 strong {
     font-weight: 700;
+}
+
+.breadcrumbs {
+    text-decoration: none;
+}
+
+.breadcrumbs:hover {
+    text-decoration: underline;
 }
 
 img {
@@ -227,12 +235,6 @@ nav ul {
     margin-top: 12px;
     margin-bottom: 0;
 }
-
-/* .nav-hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-} */
 
 .nav-hover:hover,
 .active {
@@ -419,11 +421,24 @@ footer {
     /* border: 1px solid red; */
 }
 
+.about-page main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin: auto;
+    margin-top: 50px;
+}
+
 .homepage main div {
     flex: 1;
     margin-top: 100px;
+    padding-right: 60px;
     /* text-align: center; */
     /* border: 1px solid red; */
+}
+
+.homepage main div:last-child {
+    padding-right: 0;
 }
 
 .shop-page main div {
@@ -444,15 +459,12 @@ footer {
 
 .product-page main div {
     flex: 1;
+    padding-right: 20px;
     /* border: 1px solid red; */
 }
 
-.product-info {
-    margin-left: 20px;
-}
-
-.more-info {
-    border-top: #9ad8d8 solid 2px;
+.product-page main div:last-child {
+    padding-right: 0;
 }
 
 .product-accordion {
@@ -508,28 +520,17 @@ footer {
     color: #152c53;
 }
 
-.product-slide {
-    /* width: 40%; */
-    border: 1px solid red;
-}
-
-.product-slide-content {
-    margin-left: 20px;
-}
-
-.product-slide-content img {
-    width: 100%;
-}
-
-slick-initialized .slick-slide {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.homepage main .right {
-    margin-left: 50px;
+.about-page main div {
+    flex: 1;
+    padding-top: 20px;
+    padding-right: 25px;
     /* border: 1px solid red; */
 }
+
+.about-page main div:last-child {
+    padding-right: 0;
+}
+
 
 /* The grid: Four equal columns that floats next to each other */
 .column {

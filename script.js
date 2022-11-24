@@ -14,7 +14,6 @@ function closeMobileMenu() {
 }
 
 
-//when the page loads call toggleIcon;
 $(toggleIcon)
 $(closeMobileMenu)
 

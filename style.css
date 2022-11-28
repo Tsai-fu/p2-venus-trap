@@ -77,6 +77,14 @@ h5 {
     font-weight: 400;
 }
 
+.sh1 {
+    font-size: 40;
+}
+
+.sh3 {
+    font-size: 16;
+}
+
 li {
     line-height: 130%;
     margin: 5px 0px 5px 0px;
@@ -403,6 +411,7 @@ footer {
     padding: 0;
     padding-top: 10px;
     border-top: 2px solid #ffffff;
+    flex-wrap: wrap;
 }
 
 .bottomnav li {
@@ -682,4 +691,13 @@ footer {
     nav.mobile-nav .drop-down {
         display: none;
     }
+
+    .bottomnav {
+        justify-content: center;
+    }
+
+    .bottomnav li {
+        padding-right: 40px;
+    }
+
 }

@@ -78,11 +78,11 @@ h5 {
 }
 
 .sh1 {
-    font-size: 40;
+    font-size: 40px;
 }
 
 .sh3 {
-    font-size: 16;
+    font-size: 16px;
 }
 
 li {
@@ -467,14 +467,14 @@ footer {
 }
 
 .shop-page main div {
-    flex: 1;
+    flex: 1 0 30%;
     margin: 20px 0px 30px 0px;
     /* text-align: center; */
     /* border: 1px solid red; */
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
-.shop-page main div:last-child {
+.shop-page main div:nth-child(3n) {
     padding-right: 0;
 }
 
@@ -695,8 +695,11 @@ footer {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 40;
+        font-size: 40px;
+    }
 
+    h3 {
+        font-size: 16px;
     }
 
     nav.desktop-nav {
@@ -713,10 +716,11 @@ footer {
     }
 
     .bottomnav {
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .bottomnav li {
+        flex: 1 0 100%;
         padding-right: 40px;
     }
 
@@ -757,5 +761,23 @@ footer {
         flex-direction: row-reverse;
     }
 
+    .shop-page main div {
+        flex: 1 0 50%;
+    }
 
+    .shop-page main div {
+        padding-right: 20px;
+    }
+
+    .shop-page main div:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .filter-box {
+        padding-right: 0;
+    }
+
+    .product-page main div {
+        flex: 1 0 100%;
+    }
 }

@@ -571,7 +571,8 @@ footer {
 /* Style the images inside the grid */
 .product-page .thumbs .column img {
     opacity: 0.8;
-    width: 89px;
+    /* height: 89px;
+    width: 89 px; */
     cursor: pointer;
 }
 

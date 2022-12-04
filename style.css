@@ -111,10 +111,6 @@ img.filter-icon {
     width: 15px;
 }
 
-img.shop-cart-icon {
-    width: 30px;
-}
-
 .filter-box .bold-body {
     border: #152c53 solid 2px;
     padding: 4px 8px;
@@ -162,9 +158,6 @@ nav .squiggle-mid-right {
 .button-g {
     background-color: #a2cb3b;
     /* position: absolute; */
-    width: 281px;
-    /* height: 70px; */
-    top: 507px;
     padding: 10px 60px;
     border-radius: 8px;
     text-decoration: none;
@@ -181,20 +174,39 @@ nav .squiggle-mid-right {
 .button-b {
     background-color: #9ad8d8;
     /* position: absolute; */
-    width: 281px;
-    /* height: 70px; */
-    top: 507px;
     padding: 10px 60px;
     border-radius: 8px;
     text-decoration: none;
-    text-align: center;
     color: inherit;
-    /* justify-content: center; */
+    text-align: center;
+    /* vertical-align: middle; */
 }
 
-.button-b:hover {
+.button-add-to-cart {
+    background-color: #9ad8d8;
+    position: absolute;
+    padding: 7px 60px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+img.button-cart-icon {
+    width: 30px;
+    vertical-align: middle;
+    /* padding: 0px 0px 2px 5px; */
+    margin: 0px 10px 2.5px 0px;
+}
+
+.button-b:hover,
+.button-add-to-cart:hover {
     color: #ffffff;
     background-color: #a2cb3b;
+}
+
+.purchase-buttons {
+    display: inline;
 }
 
 nav.mobile-nav {
@@ -420,6 +432,15 @@ footer {
     /* border: 1px solid red; */
 }
 
+.shop-banner2-text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+}
+
 .bottomnav {
     display: flex;
     align-items: center;
@@ -489,7 +510,7 @@ footer {
 
 .product-page main div {
     flex: 1;
-    padding-right: 20px;
+    margin-right: 20px;
     /* border: 1px solid red; */
 }
 
@@ -578,7 +599,9 @@ footer {
 
 .product-page .thumbs .column img:hover {
     opacity: 1;
+    border: #9ad8d8 solid 2px;
 }
+
 
 /* The expanding image container */
 .container {

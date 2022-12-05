@@ -20,7 +20,7 @@ body {
   font-kerning: 6%;
   color: #152c53;
   background: #ffffff;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   scrollbar-width: 0;
 }
 
@@ -784,6 +784,9 @@ img.filter-icon {
   .shop-page main,
   .product-page main {
     width: 90%;
+  }
+  .product-page main.full-breadcrumbs {
+    width: 100%;
   }
 
   .home-banner,

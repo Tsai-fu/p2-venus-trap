@@ -20,7 +20,7 @@ body {
     font-kerning: 6%;
     color: #152c53;
     background: #ffffff;
-    /* overflow-y: hidden; */
+    overflow-x: hidden;
     scrollbar-width: 0;
 }
 

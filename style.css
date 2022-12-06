@@ -601,9 +601,8 @@ img.filter-icon {
 
 .full-breadcrumbs {
     margin-top: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
 }
+
 
 /* The grid: Four equal columns that floats next to each other */
 .product-page .thumbs .column {
@@ -620,7 +619,8 @@ img.filter-icon {
     cursor: pointer;
 }
 
-.product-page .thumbs .column img:hover {
+.thumb-active,
+.thumb-img:hover {
     opacity: 1;
     border: #9ad8d8 solid 2px;
 }
@@ -797,6 +797,8 @@ img.filter-icon {
 
     .product-page main.full-breadcrumbs {
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .home-banner,
@@ -819,6 +821,7 @@ img.filter-icon {
 
     .homepage .left .footer-icon img,
     .homepage .right .footer-icon img {
+        margin-top: 0px;
         width: inherit;
     }
 
@@ -834,6 +837,7 @@ img.filter-icon {
 
     .shop-page main div {
         flex: 1 0 40%;
+        margin: 0px 0 20px 0;
     }
 
     .shop-page main div {
@@ -853,7 +857,8 @@ img.filter-icon {
         text-align: center;
     }
 
-    .banner-sub {
+    .banner-sub,
+    .deskonly-br {
         display: none;
     }
 

@@ -42,3 +42,8 @@ $('.single-slide').slick({
   infinite: true,
   dots: true
 })
+
+$('.thumb-img').on('click', function () {
+  $('.thumb-img').removeClass('thumb-active');
+  $(this).toggleClass('thumb-active');
+})
